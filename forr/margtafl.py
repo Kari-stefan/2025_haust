@@ -1,11 +1,10 @@
+cart=0 
+gambl=500
+peng=9500+gambl
 while True:
-    cart=0
-    peng=10000
     print("1 Krónan")
     print("")
     print("2 Veðja")
-    print("")
-    print("3 Aldursdæmerí")
     print("")
     print("4 LOKA")
     print("")
@@ -27,7 +26,7 @@ while True:
             print("")
             vali=int(input("Veldu: "))
             print("")
-               
+            
             if vali == 1:
                 gk=180
                 PM=188
@@ -56,8 +55,8 @@ while True:
                     if vald == 1:
                         cart += gk
                         peng -= gk
-                        if peng < 0:
-                            print("Fuck off")
+                        if peng < gk:
+                            print("Þú hefur ekki nóg af pening")
                             cart -= gk
                             peng += gk
                             break     
@@ -69,6 +68,11 @@ while True:
                     elif vald == 2:
                         cart += PM
                         peng -= PM    
+                        if peng < PM:
+                            print("Þú hefur ekki nóg af pening")
+                            cart -= PM
+                            peng += PM
+                            break     
                         print("Þú bættir Pepsi Max í körfunna þína")
                         print("")
                         valgk=int(input("1 Til þess að halda áfram: "))
@@ -76,7 +80,12 @@ while True:
                         
                     elif vald == 3:
                         cart += CZ
-                        peng -= CZ      
+                        peng -= CZ   
+                        if peng < CZ:
+                            print("Þú hefur ekki nóg af pening")
+                            cart -= CZ
+                            peng += CZ
+                            break   
                         print("Þú bættir Coke Zero í körfunna þína")
                         print("")
                         valgk=int(input("1 Til þess að halda áfram: "))
@@ -84,6 +93,11 @@ while True:
                     elif vald == 4:
                         cart += PRADE
                         peng -= PRADE    
+                        if peng < PRADE:
+                            print("Þú hefur ekki nóg af pening")
+                            cart -= PRADE
+                            peng += PRADE
+                            break
                         print("Þú Bættir Powerade í körfunna")
                         print("")
                         valgk=int(input("1 Til þess að halda áfram: "))
@@ -91,6 +105,11 @@ while True:
                     elif vald == 5:
                         cart += RB
                         peng -= RB    
+                        if peng < RB:
+                            print("Þú hefur ekki nóg af pening")
+                            cart -= RB
+                            peng += RB
+                            break
                         print("Þú bættir Red Bull í körfunna þína")
                         print("")
                         valgk=int(input("1 Til þess að halda áfram: "))
@@ -125,7 +144,12 @@ while True:
                 while True:
                     if vald2 == 1:
                         cart += SPK
-                        peng -= SPK      
+                        peng -= SPK  
+                        if peng < SPK:
+                            print("Þú hefur ekki nóg af pening")
+                            cart -= SPK
+                            peng += SPK
+                            break         
                         print("Þú bættir Sour Patch Kids í körfunna þína")
                         print("")
                         valgk2=int(input("1 Til þess að halda áfram: "))
@@ -134,6 +158,11 @@ while True:
                     elif vald2 == 2:
                         cart += HB
                         peng -= HB   
+                        if peng < HB:
+                            print("Þú hefur ekki nóg af pening")
+                            cart -= HB
+                            peng += HB
+                            break
                         print("Þú bættir Haribos í körfunna þína")
                         print("")
                         valgk2=int(input("1 Til þess að halda áfram: "))
@@ -141,6 +170,11 @@ while True:
                     elif vald2 == 3:
                         cart += PG
                         peng -= PG   
+                        if peng < PG:
+                            print("Þú hefur ekki nóg af pening")
+                            cart -= PG
+                            peng += PG
+                            break
                         print("Þú bættir Pringles í körfunna þína")
                         print("")
                         valgk2=int(input("1 Til þess að halda áfram: "))
@@ -148,6 +182,11 @@ while True:
                     elif vald2 == 4:
                         cart += DOR
                         peng -= DOR
+                        if peng < DOR:
+                            print("Þú hefur ekki nóg af pening")
+                            cart -= DOR
+                            peng += DOR
+                            break
                         print("Þú bættir Doritos í körfunna þína")
                         print("")
                         valgk2=int(input("1 Til þess að halda áfram: "))
@@ -155,6 +194,11 @@ while True:
                     elif vald2 == 5:
                         cart += SU
                         peng -= SU
+                        if peng < SU:
+                            print("Þú hefur ekki nóg af pening")
+                            cart -= SU
+                            peng += SU
+                            break
                         print("Þú bættir Súkkulaði í körfunna þína")
                         print("")
                         valgk2=int(input("1 Til þess að halda áfram: "))
@@ -197,6 +241,11 @@ while True:
                     if vald2 == 1:
                         cart += RE
                         peng -= RE    
+                        if peng < RE:
+                            print("Þú hefur ekki nóg af pening")
+                            cart -= RE
+                            peng += RE
+                            break
                         print("Þú bættir Ribeye Steiki í körfunna þína")
                         print("")
                         valgk2=int(input("1 Til þess að halda áfram: "))
@@ -205,6 +254,11 @@ while True:
                     elif vald2 == 2:
                         cart += SPAG
                         peng -= SPAG
+                        if peng < SPAG:
+                            print("Þú hefur ekki nóg af pening")
+                            cart -= SPAG
+                            peng += SPAG
+                            break
                         print("Þú bættir Spagettí í körfunna þína")
                         print("")
                         valgk2=int(input("1 Til þess að halda áfram: "))
@@ -212,6 +266,11 @@ while True:
                     elif vald2 == 3:
                         cart += PZA
                         peng -= PZA
+                        if peng < PZA:
+                            print("Þú hefur ekki nóg af pening")
+                            cart -= PZA
+                            peng += PZA
+                            break
                         print("Þú bættir Pizzu í körfunna þína")
                         print("")
                         valgk2=int(input("1 Til þess að halda áfram: "))
@@ -219,6 +278,11 @@ while True:
                     elif vald2 == 4:
                         cart += HAKK
                         peng -= HAKK
+                        if HAKK < peng:
+                            print("Þú hefur ekki nóg af pening")
+                            cart -= HAKK
+                            peng += HAKK
+                            break
                         print("Þú bættir Hakki í körfunna þína")
                         print("")
                         valgk2=int(input("1 Til þess að halda áfram: "))
@@ -226,6 +290,11 @@ while True:
                     elif vald2 == 5:
                         cart += FISK
                         peng -= FISK
+                        if peng < FISK:
+                            print("Þú hefur ekki nóg af pening")
+                            cart -= FISK
+                            peng += FISK
+                            break
                         print("Þú bættir Fiski í körfunna þína")
                         print("")
                         valgk2=int(input("1 Til þess að halda áfram: "))
@@ -253,11 +322,7 @@ while True:
                     valloka=int(input("1 Til þess að halda áfram: "))
                     if valloka == 1:
                         break
-                    
-  
-
-        
-          
+                
             elif vali == 4:
                 print("Þú hefur",cart,"Kr í körfunni þinni")
                 print("")
@@ -269,3 +334,20 @@ while True:
                     print("")
                     print("---------------------------------------------------------------------")
                     break
+    elif val == 2:
+        gamb = int(input("Veldu upphæð sem þú vilt veðja mesta lagi 500kr: "))
+        if gamb > 500:
+            print("Þú mátt ekki veðja meira en 500kr!")
+        else:
+            import random
+            num = random.randint(1, 10)
+            guess = int(input("Giskaðu á tölu á milli 1 og 10: "))
+            if guess == num:
+                print("Þú vannst veðmál þitt!")
+                peng += gamb * 2
+                print("Nýja upphæðin þín er:", peng, "kr")
+            else:
+                print("Þú tapaðir veðmálinu þínu. Rétta talan var:", num)
+                peng -= gamb
+                print("Nýja upphæðin þín er:", peng, "kr")
+        print("")
