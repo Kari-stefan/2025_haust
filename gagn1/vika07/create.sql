@@ -2,7 +2,16 @@ CREATE TABLE customers (
     customer_id SERIAL PRIMARY KEY,
     first_name VARCHAR(55) NOT NULL,
     last_name VARCHAR(55) NOT NULL,
+    email VARCHAR(100),
+    phone VARCHAR(15),
     address VARCHAR(200) NOT NULL
+);
+
+CREATE TABLE pizza_orders (
+    id SERIAL PRIMARY KEY,
+    idPizza INT REFERENCES pizzas(pizza_id),
+    idCustomer INT REFERENCES customers(customer_id),
+    
 );
 
 CREATE TABLE employees (
@@ -29,8 +38,13 @@ CREATE TABLE pizzas (
     is_vegan BOOLEAN
 );
 
+CREATE TABLE pizza_ingredients (
+    pizza_id INT REFERENCES pizzas(pizza_id),
+    ingredient_id INT REFERENCES ingredients(ingredient_id)
+);
 
-DROP TABLE IF EXISTS pizzas
-DROP TABLE IF EXISTS ingredients 
-DROP TABLE IF EXISTS customers 
-DROP TABLE IF EXISTS employees 
+
+DROP TABLE IF EXISTS pizzas;
+DROP TABLE IF EXISTS ingredients;
+DROP TABLE IF EXISTS customers;
+DROP TABLE IF EXISTS employees; 

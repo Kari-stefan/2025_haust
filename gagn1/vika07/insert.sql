@@ -1,9 +1,5 @@
-INSERT INTO customers (customer_id, first_name, last_name, address)
-VALUES (1, 'John', 'Doe', '123 Main St, Springfield'),
-(2, 'Jane', 'Doe', '456 Elm st, Springfield'),
-(3, 'Alice', 'Smith', '789 Oak St, Springfield'),
-(4, 'Bob', 'Johnson', '101 Pine St, Springfield'),
-(5, 'Charlie', 'Brown', '202 Maple St, Springfield');
+INSERT INTO customers (customer_id, first_name, last_name, email, phone, address)
+VALUES (1, 'John', 'Doe', 'Johndoe@gmail.com', '12345678', '123 Main St, Cityville');
 
 
 INSERT INTO employees (employee_id, first_name, last_name, position, hire_date)
@@ -39,12 +35,17 @@ VALUES ('Pizza Sauce', 20, 10, TRUE),
     ('Vegetables', 20, 10, TRUE),
     ('Chicken', 30, 30, FALSE);
 
+INSERT INTO pizza_orders (idPizza, idCustomer)
+VALUES (2, 3),
+
 SELECT * from ingredients;
 SELECT * from pizzas;
 SELECT * from customers;
 SELECT * from employees;
-    
+
+
 DELETE FROM pizzas;
 DELETE FROM customers;
 DELETE FROM employees;
-DELETE FROM ingredients
+DELETE FROM ingredients;
+DELETE FROM pizza_orders;
