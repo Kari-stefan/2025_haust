@@ -16,26 +16,44 @@ p {
 h2 {
     text-align: center;
     font-family: Arial, sans-serif;
-    color: rgb(5, 3, 3);
+    letter-spacing: 1px;
     margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    text-shadow: 2px 2px 4px grey;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 3px;
-    text-decoration-color: grey;
-    letter-spacing: 2px;
-    word-spacing: 5px;
-    line-height: 1.5;
-    border-bottom: 2px solid black;
-    padding-bottom: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 15px;
+
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+}
+
+.link {
+    background-color: #f0f0f0; 
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 15px 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: #2f00ff;
+    font-weight: bold;
+}
+
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #0000EE;
+    text-decoration: none;
 }
 
 
@@ -130,3 +148,6 @@ h3{
     object-fit: cover;
     display: block;
 }
+
+
+
