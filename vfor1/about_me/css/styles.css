@@ -10,6 +10,7 @@ body {
 /* These styles apply to all h1 and h2 headings, giving them a serif font for a more formal appearance. */
 h1, h2 {
     font-family: Georgia, 'Times New Roman', Times, serif; /* Serif font stack for headings. */
+    color: #5a3e1b; /* Dark brown color for headings. */
 }
 
 /* --- Stílar fyrir sérstaka hluta (Class & ID Selectors) --- */

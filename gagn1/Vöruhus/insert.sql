@@ -15,8 +15,8 @@ VALUES ('2023-10-01', 5000),
     ('2023-10-05', 3000),
     ('2023-10-10', 4000);
 
-SELECT 
-
-SELECT * FROM customers
-
-SELECT * FROM suppliers;
+SELECT * FROM products;
+SELECT * FROM customers;
+SELECT * FROM employee;
+SELECT * FROM inbound_shipments;
+SELECT * FROM outbound_shipments;
