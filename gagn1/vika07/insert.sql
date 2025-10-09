@@ -33,7 +33,7 @@ INSERT INTO pizza_orders (idPizza, idCustomer)
 VALUES (2, 1);
 
 
-DELETE FROM pizza_orders
-DELETE FROM pizza_ingredients
-DELETE FROM pizzas
-DELETE FROM ingredients
+DELETE FROM pizza_orders;
+DELETE FROM pizza_ingredients;
+DELETE FROM pizzas;
+DELETE FROM ingredients;

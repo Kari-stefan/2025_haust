@@ -54,7 +54,7 @@ CREATE TABLE inventory (
     product_id INT REFERENCES products(product_id),
     location_id INT REFERENCES locations(location_id),
     quantity INT NOT NULL,
-    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    last_updated VARCHAR(10) NOT NULL
 );
 
 DROP TABLE IF EXISTS inventory;
