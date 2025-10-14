@@ -8,13 +8,19 @@ DELETE FROM suppliers;
 
 
 INSERT INTO customers (first_name, last_name, email, phone, address)
-VALUES ('Hilmir', 'Blær', 'Hilmir@gmail.com', '7672008', 'Þorláksgeisli 20')
+VALUES ('Hilmir', 'Blær', 'Hilmir@gmail.com', '7672008', 'Þorláksgeisli 20'),
+    ('Kári', 'Sigurðsson', 'Kari@gmail.com', '7672009', 'Laugavegur 1');
 
 
 INSERT INTO inbound_shipments (shipment_date, total_cost)
 VALUES ('2023-10-01', 5000),
     ('2023-10-05', 3000),
     ('2023-10-10', 4000);
+
+
+INSERT INTO outbound_shipments (customer_id, shipment_date)
+VALUES (1, '2023-10-15'),
+    (2, '2023-10-20');
 
 
 DELETE FROM suppliers;

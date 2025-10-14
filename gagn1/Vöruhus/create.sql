@@ -25,15 +25,17 @@ CREATE TABLE employee (
 
 CREATE TABLE inbound_shipments (
     shipment_id SERIAL PRIMARY KEY,
-    supplier_id INT REFERENCES suppliers(supplier_id),
+    supplier_id INT,
     shipment_date DATE NOT NULL,
-    total_cost INTEGER
+    total_cost INTEGER,
+    status VARCHAR(50)
 );
 
 CREATE TABLE outbound_shipments (
     shipment_id SERIAL PRIMARY KEY,
-    customer_id INT REFERENCES customers(customer_id),
-    shipment_date DATE NOT NULL
+    customer_id INT,
+    shipment_date DATE NOT NULL,
+    status VARCHAR(50)
 );
 
 CREATE TABLE products (
@@ -56,6 +58,23 @@ CREATE TABLE inventory (
     quantity INT NOT NULL,
     last_updated VARCHAR(10) NOT NULL
 );
+
+
+ALTER TABLE outbound_shipments
+ADD CONSTRAINT fk_customer
+FOREIGN KEY (customer_id) 
+REFERENCES customers(customer_id);
+
+ALTER TABLE inbound_shipments
+ADD CONSTRAINT fk_supplier
+FOREIGN KEY (supplier_id)
+REFERENCES suppliers(supplier_id);
+
+
+
+SELECT * FROM outbound_shipments;
+
+
 
 DROP TABLE IF EXISTS inventory;
 DROP TABLE IF EXISTS locations;
