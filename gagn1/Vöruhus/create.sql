@@ -53,23 +53,11 @@ CREATE TABLE locations (
     shelf VARCHAR(10) NOT NULL
 );
 CREATE TABLE inventory (
-    product_id INT REFERENCES products(product_id),
-    location_id INT REFERENCES locations(location_id),
+    product_id INT,
+    location_id INT,
     quantity INT NOT NULL,
     last_updated VARCHAR(10) NOT NULL
 );
-
-
-ALTER TABLE outbound_shipments
-ADD CONSTRAINT fk_customer
-FOREIGN KEY (customer_id) 
-REFERENCES customers(customer_id);
-
-ALTER TABLE inbound_shipments
-ADD CONSTRAINT fk_supplier
-FOREIGN KEY (supplier_id)
-REFERENCES suppliers(supplier_id);
-
 
 
 SELECT * FROM outbound_shipments;

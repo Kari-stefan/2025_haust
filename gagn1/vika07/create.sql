@@ -1,9 +1,3 @@
-DROP TABLE IF EXISTS pizza_ingredients;
-DROP TABLE IF EXISTS pizza_orders;
-DROP TABLE IF EXISTS pizzas;
-DROP TABLE IF EXISTS ingredients;
-DROP TABLE IF EXISTS customers;
-DROP TABLE IF EXISTS employees;
 
 CREATE TABLE customers (
     customer_id SERIAL PRIMARY KEY,
@@ -31,19 +25,18 @@ CREATE TABLE ingredients (
 );
 
 CREATE TABLE pizza_ingredients (
-    pizza_id INT REFERENCES pizzas(pizza_id),
-    ingredient_id INT REFERENCES ingredients(ingredient_id)
+    pizza_id INT,
+    ingredient_id INT
 );
 
 CREATE TABLE pizza_orders (
     id SERIAL PRIMARY KEY,
-    idPizza INT REFERENCES pizzas(pizza_id),
-    idCustomer INT REFERENCES customers(customer_id)
+    idPizza INT,
+    idCustomer INT
 );
 
-SELECT pizzas.name, ingredients.name
-FROM pizzas INNER JOIN pizza_ingredients
-ON pizzas.pizza_id = pizza_ingredients.pizza_id
-INNER JOIN ingredients
-ON pizza_ingredients.ingredient_id = ingredients.ingredient_id
-WHERE pizzas.price > 60000;
+
+
+
+
+
