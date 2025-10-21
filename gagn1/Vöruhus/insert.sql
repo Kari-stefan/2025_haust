@@ -22,6 +22,25 @@ INSERT INTO outbound_shipments (customer_id, shipment_date)
 VALUES (1, '2023-10-15'),
     (2, '2023-10-20');
 
+INSERT INTO products  (name, description, price, stock_quantity, weight)
+VALUES ('Laptop', 'High performance laptop', 1200, 50, 2),
+    ('Smartphone', 'Latest model smartphone', 800, 100, 0.5),
+    ('Headphones', 'Noise-cancelling headphones', 200, 150, 0.3),
+    ('Monitor', '4K UHD monitor', 400, 30, 5);
+
+INSERT INTO locations (aisle, shelf)
+VALUES ('A1', 'S1'),
+    ('A1', 'S2'),
+    ('A2', 'S1'),
+    ('A2', 'S2');
+
+INSERT INTO inventory (product_id, location_id, quantity, last_updated)
+VALUES (1, 1, 20, '2023-10-01'),
+    (2, 2, 50, '2023-10-02'),
+    (3, 3, 70, '2023-10-03'),
+    (4, 4, 15, '2023-10-04');
+
+
 
 DELETE FROM suppliers;
 SELECT * FROM suppliers;
