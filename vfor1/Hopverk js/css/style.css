@@ -1,0 +1,53 @@
+body  {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.d {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    width: 200px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+}
+
+
+
+
+.Buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border: 2px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+Button {
+    width: 360px;
+    height: 360px;
+    border-radius: 120px;
+    border: 12px;
+}
+
+.dark-mode {
+background-color: #121212;
+color: #e0e0e0;
+}
+
+.Darkbuttons {
+    background-color: #000000;
+    color: #e0e0e0;
+}

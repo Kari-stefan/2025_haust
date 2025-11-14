@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --bg-color: #2d2f32;
+    --card-bg: #000000;
+    --border-color: #000000;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.stjornbord {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.listi-gamar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.starfsmanna-kort {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+.starfsmanna-kort h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.starfsmanna-kort p {
+    color: var(--secondary-color);
+}
+
+.kort-throun {
+    border-left: 5px solid #39ff14;
+    border-right : 5px solid #39ff14;
+    border-top  : 5px solid #39ff14;
+    border-bottom : 5px solid #39ff14;
+}
+
+.kort-sala {
+  border-left: 5px solid #ffd900;
+  border-right : 5px solid #ffd900;
+  border-top  : 5px solid #ffd900;
+  border-bottom : 5px solid #ffd900;
+}
+
+.kort-stjorn {
+    border-left: 5px solid #ff0000;
+    border-right: 5px solid #ff0000;
+    border-top: 5px solid #ff0000;
+    border-bottom: 5px solid #ff0000;
+}
+
+.top-left {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: #39ff14;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow:
+    0 0 5px #39ff14,
+    0 0 15px #39ff14,
+    0 0 30px #39ff14;
+}
+
+.top-left1 {
+  position: fixed;
+  top: 65px;
+  left: 10px;
+  background: #efff14;
+  color: black; 
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow:
+    0 0 5px #efff14 ,
+    0 0 15px #efff14,
+    0 0 30px #efff14;
+}
+

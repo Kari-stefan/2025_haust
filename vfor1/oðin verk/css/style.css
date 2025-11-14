@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+#output {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+#flash {
+    position: fixed;
+    inset: 0;
+    background: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s;
+}
+
+.flash-active {
+    opacity: 0.7;
+}
